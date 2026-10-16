@@ -1,0 +1,4 @@
+# Install torch separately for your CPU or CUDA platform; then pip install -e . at repo root.
+scipy>=1.10
+psutil>=5.9
+pytest>=7
