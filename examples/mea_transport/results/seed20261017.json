@@ -1,0 +1,445 @@
+{
+  "config": {
+    "out": "examples/mea_transport/runs/cpu_seed20261017",
+    "epochs": 150,
+    "n_train": 512,
+    "n_val": 96,
+    "n_test": 128,
+    "nodes": 33,
+    "seed": 20261017,
+    "threads": 2,
+    "batch_size": 64,
+    "device": "cpu",
+    "physics_weight": 0.01,
+    "balance_weight": 0.1
+  },
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "logical_cpus_visible": 9,
+    "cuda_available": false,
+    "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+    "base_commit": "c1c981b8476528cfb8b313522fb575933781d1f7"
+  },
+  "parameters_real_scalar_equivalent": 29138,
+  "data_generation_train_val_seconds": 0.050500165998528246,
+  "training": {
+    "data": {
+      "wall_seconds_including_validation": 15.897221309001907,
+      "best_epoch": 149,
+      "best_validation_relative_l2": 0.023082944835960562
+    },
+    "pino": {
+      "wall_seconds_including_validation": 15.782667919000232,
+      "best_epoch": 149,
+      "best_validation_relative_l2": 0.021607436578872815
+    }
+  },
+  "evaluation": {
+    "id": {
+      "fd": {
+        "relative_l2_mean": 0.0,
+        "relative_l2_p95": 0.0,
+        "relative_l2_per_species": [
+          0.0,
+          0.0
+        ],
+        "mass_defect_mean": 1.2212625597968017e-14,
+        "mass_defect_p95": 3.453943211273327e-14,
+        "absolute_mass_defect_mean": 4.663700938902318e-15,
+        "pde_rms": 1.6342431173501058e-14,
+        "boundary_max_abs": 0.0,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.19200768082125208
+      },
+      "data": {
+        "relative_l2_mean": 0.022113704935856418,
+        "relative_l2_p95": 0.053122757338580316,
+        "relative_l2_per_species": [
+          0.018577968122639583,
+          0.02564944174907325
+        ],
+        "mass_defect_mean": 0.06017047827827712,
+        "mass_defect_p95": 0.15389671490517626,
+        "absolute_mass_defect_mean": 0.02188509469415758,
+        "pde_rms": 0.2344170503880744,
+        "boundary_max_abs": 2.978691360233654e-08,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.17892837524414062
+      },
+      "pino": {
+        "relative_l2_mean": 0.021186750551640286,
+        "relative_l2_p95": 0.051152980671295145,
+        "relative_l2_per_species": [
+          0.01764420430290862,
+          0.024729296800371944
+        ],
+        "mass_defect_mean": 0.03630268970174762,
+        "mass_defect_p95": 0.09725932821773411,
+        "absolute_mass_defect_mean": 0.01270133388146311,
+        "pde_rms": 0.07631573568082635,
+        "boundary_max_abs": 2.978691360233654e-08,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.1503693163394928
+      },
+      "linear_lift": {
+        "relative_l2_mean": 0.1533720563823343,
+        "relative_l2_p95": 0.3770465113320999,
+        "relative_l2_per_species": [
+          0.14302646384949833,
+          0.16371764891517024
+        ],
+        "mass_defect_mean": 0.3220323872539629,
+        "mass_defect_p95": 0.7814058584809597,
+        "absolute_mass_defect_mean": 0.12747272462157028,
+        "pde_rms": 0.17625312544243116,
+        "boundary_max_abs": 0.0,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.20342042005314198
+      }
+    },
+    "bc_ood": {
+      "fd": {
+        "relative_l2_mean": 0.0,
+        "relative_l2_p95": 0.0,
+        "relative_l2_per_species": [
+          0.0,
+          0.0
+        ],
+        "mass_defect_mean": 9.087775640710636e-15,
+        "mass_defect_p95": 2.4311935983690305e-14,
+        "absolute_mass_defect_mean": 5.6216608974125675e-15,
+        "pde_rms": 2.126234363273111e-14,
+        "boundary_max_abs": 0.0,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.05009380640346703
+      },
+      "data": {
+        "relative_l2_mean": 0.056250351178668154,
+        "relative_l2_p95": 0.11592095542673014,
+        "relative_l2_per_species": [
+          0.058444372738145726,
+          0.054056329619190595
+        ],
+        "mass_defect_mean": 0.1015642221779925,
+        "mass_defect_p95": 0.26530679290790327,
+        "absolute_mass_defect_mean": 0.05705960516388094,
+        "pde_rms": 0.576506521004698,
+        "boundary_max_abs": 5.9398398422061405e-08,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.05009380728006363
+      },
+      "pino": {
+        "relative_l2_mean": 0.04769129662373172,
+        "relative_l2_p95": 0.10215434761488965,
+        "relative_l2_per_species": [
+          0.04747132803475832,
+          0.04791126521270513
+        ],
+        "mass_defect_mean": 0.07450589458557003,
+        "mass_defect_p95": 0.17214797172294374,
+        "absolute_mass_defect_mean": 0.04435688371609152,
+        "pde_rms": 0.24046658181736155,
+        "boundary_max_abs": 5.9398398422061405e-08,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.05009380728006363
+      },
+      "linear_lift": {
+        "relative_l2_mean": 0.18003836892902625,
+        "relative_l2_p95": 0.42812751886734446,
+        "relative_l2_per_species": [
+          0.16789800298209093,
+          0.19217873487596154
+        ],
+        "mass_defect_mean": 0.3126702895076817,
+        "mass_defect_p95": 0.7774923149728068,
+        "absolute_mass_defect_mean": 0.1828072456176898,
+        "pde_rms": 0.3235559733578648,
+        "boundary_max_abs": 0.0,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.05009380640346703
+      }
+    },
+    "D_ood": {
+      "fd": {
+        "relative_l2_mean": 0.0,
+        "relative_l2_p95": 0.0,
+        "relative_l2_per_species": [
+          0.0,
+          0.0
+        ],
+        "mass_defect_mean": 3.4583843497487786e-15,
+        "mass_defect_p95": 8.981358074648819e-15,
+        "absolute_mass_defect_mean": 1.1472605990350349e-15,
+        "pde_rms": 4.2249397786411204e-15,
+        "boundary_max_abs": 0.0,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.08199517993155744
+      },
+      "data": {
+        "relative_l2_mean": 0.14181068237948277,
+        "relative_l2_p95": 0.3492696938325363,
+        "relative_l2_per_species": [
+          0.10404725092640267,
+          0.17957411383256286
+        ],
+        "mass_defect_mean": 0.10661464687190071,
+        "mass_defect_p95": 0.28077545701915535,
+        "absolute_mass_defect_mean": 0.03672968721267018,
+        "pde_rms": 0.353995795257511,
+        "boundary_max_abs": 2.978691360233654e-08,
+        "negative_fraction": 0.0003551136363636364,
+        "minimum_c": -0.012896537780761719
+      },
+      "pino": {
+        "relative_l2_mean": 0.13507952054767225,
+        "relative_l2_p95": 0.37799486621038436,
+        "relative_l2_per_species": [
+          0.08660843993494163,
+          0.18355060116040284
+        ],
+        "mass_defect_mean": 0.10913064825893344,
+        "mass_defect_p95": 0.29418968593766,
+        "absolute_mass_defect_mean": 0.03810810779290022,
+        "pde_rms": 0.1361015871697755,
+        "boundary_max_abs": 2.978691360233654e-08,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.033577144145965576
+      },
+      "linear_lift": {
+        "relative_l2_mean": 0.3669137150249919,
+        "relative_l2_p95": 0.9383671337373887,
+        "relative_l2_per_species": [
+          0.34805224218765124,
+          0.3857751878623324
+        ],
+        "mass_defect_mean": 0.33229920197810014,
+        "mass_defect_p95": 0.7820038500238979,
+        "absolute_mass_defect_mean": 0.12743632376529024,
+        "pde_rms": 0.1687112436559813,
+        "boundary_max_abs": 0.0,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.20342042005314198
+      }
+    },
+    "v_ood": {
+      "fd": {
+        "relative_l2_mean": 0.0,
+        "relative_l2_p95": 0.0,
+        "relative_l2_per_species": [
+          0.0,
+          0.0
+        ],
+        "mass_defect_mean": 6.9560102555505625e-15,
+        "mass_defect_p95": 1.9027470869187705e-14,
+        "absolute_mass_defect_mean": 4.883343358388936e-15,
+        "pde_rms": 1.7207571131711538e-14,
+        "boundary_max_abs": 0.0,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.1980717191069225
+      },
+      "data": {
+        "relative_l2_mean": 0.07519211665928738,
+        "relative_l2_p95": 0.17935125912956212,
+        "relative_l2_per_species": [
+          0.06093839622308362,
+          0.08944583709549109
+        ],
+        "mass_defect_mean": 0.10185074720970949,
+        "mass_defect_p95": 0.28006086214869774,
+        "absolute_mass_defect_mean": 0.06792020574677837,
+        "pde_rms": 0.6372934563165124,
+        "boundary_max_abs": 2.978691360233654e-08,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.13865283131599426
+      },
+      "pino": {
+        "relative_l2_mean": 0.06578113102826244,
+        "relative_l2_p95": 0.14776617061151112,
+        "relative_l2_per_species": [
+          0.05937703723960494,
+          0.07218522481691997
+        ],
+        "mass_defect_mean": 0.08714186895004092,
+        "mass_defect_p95": 0.26966263275118324,
+        "absolute_mass_defect_mean": 0.05774954535799144,
+        "pde_rms": 0.31182756710075976,
+        "boundary_max_abs": 2.978691360233654e-08,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.1435847282409668
+      },
+      "linear_lift": {
+        "relative_l2_mean": 0.16267645361413324,
+        "relative_l2_p95": 0.42032774577980403,
+        "relative_l2_per_species": [
+          0.14815169570191666,
+          0.17720121152634988
+        ],
+        "mass_defect_mean": 0.21234700884451005,
+        "mass_defect_p95": 0.519907668807025,
+        "absolute_mass_defect_mean": 0.15971971687724978,
+        "pde_rms": 0.21818686564866804,
+        "boundary_max_abs": 0.0,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.20342042005314198
+      }
+    },
+    "interface_ood": {
+      "fd": {
+        "relative_l2_mean": 0.0,
+        "relative_l2_p95": 0.0,
+        "relative_l2_per_species": [
+          0.0,
+          0.0
+        ],
+        "mass_defect_mean": 1.0468223605547077e-14,
+        "mass_defect_p95": 2.984907065793189e-14,
+        "absolute_mass_defect_mean": 3.588280804013946e-15,
+        "pde_rms": 1.1063722271686343e-14,
+        "boundary_max_abs": 0.0,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.1159331167659099
+      },
+      "data": {
+        "relative_l2_mean": 0.12552555939083176,
+        "relative_l2_p95": 0.27521573412683387,
+        "relative_l2_per_species": [
+          0.11036848907808872,
+          0.14068262970357479
+        ],
+        "mass_defect_mean": 0.15173587624351037,
+        "mass_defect_p95": 0.3930809035852433,
+        "absolute_mass_defect_mean": 0.05863804797220925,
+        "pde_rms": 0.8533197863128787,
+        "boundary_max_abs": 2.978691360233654e-08,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.041650936007499695
+      },
+      "pino": {
+        "relative_l2_mean": 0.10939140834810265,
+        "relative_l2_p95": 0.22908460269305556,
+        "relative_l2_per_species": [
+          0.0893145808151897,
+          0.12946823588101572
+        ],
+        "mass_defect_mean": 0.14025770397522608,
+        "mass_defect_p95": 0.3275161940348706,
+        "absolute_mass_defect_mean": 0.055598165158472844,
+        "pde_rms": 0.4190213073211068,
+        "boundary_max_abs": 2.978691360233654e-08,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.0916527807712555
+      },
+      "linear_lift": {
+        "relative_l2_mean": 0.25741034116718964,
+        "relative_l2_p95": 0.6841862828808334,
+        "relative_l2_per_species": [
+          0.24553297754471723,
+          0.269287704789662
+        ],
+        "mass_defect_mean": 0.3340434148961846,
+        "mass_defect_p95": 0.7704679029288183,
+        "absolute_mass_defect_mean": 0.12977549642087505,
+        "pde_rms": 0.22592756931955676,
+        "boundary_max_abs": 0.0,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.20342042005314198
+      }
+    },
+    "mesh_ood": {
+      "fd": {
+        "relative_l2_mean": 0.0,
+        "relative_l2_p95": 0.0,
+        "relative_l2_per_species": [
+          0.0,
+          0.0
+        ],
+        "mass_defect_mean": 4.776698978703243e-14,
+        "mass_defect_p95": 1.437901057954895e-13,
+        "absolute_mass_defect_mean": 1.786330048843195e-14,
+        "pde_rms": 6.20277270287717e-14,
+        "boundary_max_abs": 0.0,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.1918202457192899
+      },
+      "data": {
+        "relative_l2_mean": 0.022675686471716704,
+        "relative_l2_p95": 0.055615944764677114,
+        "relative_l2_per_species": [
+          0.019233600799238117,
+          0.026117772144195295
+        ],
+        "mass_defect_mean": 0.0825797708447758,
+        "mass_defect_p95": 0.20916189701260973,
+        "absolute_mass_defect_mean": 0.03084108964992379,
+        "pde_rms": 0.275789643350456,
+        "boundary_max_abs": 2.978691360233654e-08,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.1797560453414917
+      },
+      "pino": {
+        "relative_l2_mean": 0.0217025946556007,
+        "relative_l2_p95": 0.05186371158112336,
+        "relative_l2_per_species": [
+          0.01828083203112759,
+          0.025124357280073808
+        ],
+        "mass_defect_mean": 0.03838526535087907,
+        "mass_defect_p95": 0.09893311198785909,
+        "absolute_mass_defect_mean": 0.013699717890047383,
+        "pde_rms": 0.0823909685094729,
+        "boundary_max_abs": 2.978691360233654e-08,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.15221241116523743
+      },
+      "linear_lift": {
+        "relative_l2_mean": 0.1559460984146801,
+        "relative_l2_p95": 0.38476682723609956,
+        "relative_l2_per_species": [
+          0.14522563109473677,
+          0.1666665657346235
+        ],
+        "mass_defect_mean": 0.3234117743182706,
+        "mass_defect_p95": 0.7838570873340311,
+        "absolute_mass_defect_mean": 0.12952760212490974,
+        "pde_rms": 0.17645756376704944,
+        "boundary_max_abs": 0.0,
+        "negative_fraction": 0.0,
+        "minimum_c": 0.20342042005314198
+      }
+    }
+  },
+  "fd_coarse_vs_4x_fine_relative_l2_mean": 0.001171052270458477,
+  "benchmark": {
+    "cpu": {
+      "available": true,
+      "single_inference_ms": 1.0564295007498004,
+      "batch_inference_ms": 5.302742500134627,
+      "batch_size": 128,
+      "train_step_batch32_ms": 8.308559998113196,
+      "device_name": "x86_64",
+      "threads": 2,
+      "peak_allocated_bytes": null
+    },
+    "cuda": {
+      "available": false,
+      "note": "Not measured; no CUDA device in this execution environment."
+    },
+    "fd_cpu": {
+      "single_solve_ms": 0.052694498663186096,
+      "batch_solve_ms": 5.8719184999063145,
+      "batch_size": 128,
+      "note": "Both FD and FNO use pre-built coefficients/inputs. No network initialization, imports or host/device copies included."
+    },
+    "memory_estimate": {
+      "parameter_bytes": 116552,
+      "parameter_gradient_adam_lower_bound_bytes": 466208,
+      "note": "Tensor-only lower bound: parameters, gradient, two Adam moments; excludes activations, FFT workspace, allocator and CUDA context. No VRAM fit or speed claim."
+    },
+    "note": "Microbenchmark refreshed with pre-built FD inputs after the main training run."
+  },
+  "peak_process_rss_mib": 438.234375,
+  "dataset_sha256": "7e4d959e48bc7011a0f038bf622e8fd33b943783fe178b12534122181bb5e72f"
+}

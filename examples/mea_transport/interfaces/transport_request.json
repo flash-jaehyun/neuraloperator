@@ -1,0 +1,83 @@
+{
+  "schema_version": "mea_transport_si_v1",
+  "sample_id": "ILLUSTRATIVE_NOT_MEASURED",
+  "species": [
+    "water_proxy",
+    "ion_proxy"
+  ],
+  "length_m": 2e-05,
+  "D_ref_m2_s": 1e-09,
+  "concentration_ref_mol_m3": [
+    1000,
+    1000
+  ],
+  "x_m": [
+    0.0,
+    6.25e-07,
+    1.25e-06,
+    1.8750000000000003e-06,
+    2.5e-06,
+    3.125e-06,
+    3.7500000000000005e-06,
+    4.3750000000000005e-06,
+    5e-06,
+    5.625e-06,
+    6.25e-06,
+    6.875e-06,
+    7.500000000000001e-06,
+    8.125000000000001e-06,
+    8.750000000000001e-06,
+    9.375000000000001e-06,
+    1e-05,
+    1.0625e-05,
+    1.125e-05,
+    1.1875e-05,
+    1.25e-05,
+    1.3125e-05,
+    1.375e-05,
+    1.4375e-05,
+    1.5000000000000002e-05,
+    1.5625e-05,
+    1.6250000000000002e-05,
+    1.6875e-05,
+    1.7500000000000002e-05,
+    1.8125e-05,
+    1.8750000000000002e-05,
+    1.9375e-05,
+    2e-05
+  ],
+  "D_m2_s": [
+    1e-10,
+    8e-11
+  ],
+  "v_m_s": [
+    2e-06,
+    -1e-06
+  ],
+  "k_per_s": [
+    0.5,
+    0.8
+  ],
+  "source_mol_m3_s": [
+    0.1,
+    0.2
+  ],
+  "boundary_left_mol_m3": [
+    800,
+    700
+  ],
+  "boundary_right_mol_m3": [
+    400,
+    500
+  ],
+  "provenance": {
+    "method": "illustrative_unvalidated",
+    "material_id": null,
+    "forcefield_or_DFT_settings": null,
+    "uncertainty": null,
+    "water_activity": null,
+    "temperature_K": 298.15,
+    "tracer_to_chemical_diffusion_conversion": null
+  },
+  "boundary_type": "dirichlet"
+}
